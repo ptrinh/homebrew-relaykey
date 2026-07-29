@@ -7,28 +7,28 @@ class RelaykeyAgent < Formula
   # Proprietary: the published binaries may be downloaded and run, but the
   # software is not redistributable and the source is not public.
   license :cannot_represent
-  # No `version` stanza: Homebrew scans it from the v0.4.0 in the URLs below,
+  # No `version` stanza: Homebrew scans it from the v0.4.1 in the URLs below,
   # and declaring it again is flagged as redundant by `brew audit`.
 
   on_macos do
     on_arm do
-      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.0/relaykey-agent-cli-macos-arm64"
-      sha256 "7c433a9a483a58a7ec82dfa069ae81ef1c3b7055854781fe1a04cefce02208ff"
+      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.1/relaykey-agent-cli-macos-arm64"
+      sha256 "c74cd2af3f8a7206cab23ba15af565bffe7d1f3eacaeb6b153b57c89681a72d0"
     end
     on_intel do
-      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.0/relaykey-agent-cli-macos-amd64"
-      sha256 "0ce63ceacd0a086e60db33d3d7308cadda51b8a668954082795bdff4fe6f266e"
+      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.1/relaykey-agent-cli-macos-amd64"
+      sha256 "4fdccc138cc055a0dab6bbc1e05fddbe256b46edcd367b4fb4efed4f406fd761"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.0/relaykey-agent-cli-linux-arm64"
-      sha256 "9f4e87da5dca32f98238e5964512211512679244ece4770aa6d88841e20f12e2"
+      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.1/relaykey-agent-cli-linux-arm64"
+      sha256 "89c6b72f04bd279ae78d816808cad7ef5e4a466b4b60a7b4c67fbcb497180692"
     end
     on_intel do
-      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.0/relaykey-agent-cli-linux-amd64"
-      sha256 "2a12e018fde4794938dd3bd4f2244f49889e5f9d66bab53bc8164e87e1325590"
+      url "https://github.com/ptrinh/relaykey-public/releases/download/v0.4.1/relaykey-agent-cli-linux-amd64"
+      sha256 "c3bcd7e8bd7897d431744b2a0556ab6702d9eb7346b31271bf39f1ca4c605b4a"
     end
   end
 
