@@ -2,7 +2,7 @@
 # Apple Silicon only — the release ships a single-arch app.
 cask "relaykey-client" do
   version "0.4.0"
-  sha256 "b13d0b0570139909639c5a718d7e651de0d4f8ace17f3fcfc5b5e57ddb4dddc0"
+  sha256 "9c25311f5ace5f40d64d65af4103d2b293d15459379852787cbbbcbda2de3eaa"
 
   url "https://github.com/ptrinh/relaykey-public/releases/download/v#{version}/relaykey-client-gui-macos-arm64.zip",
       verified: "github.com/ptrinh/relaykey-public/"
@@ -27,16 +27,8 @@ cask "relaykey-client" do
   ]
 
   caveats <<~EOS
-    This build is signed with a Developer ID but is not yet notarised, so
-    Gatekeeper will refuse the first launch. Either install with
-
-      brew install --cask --no-quarantine relaykey-client
-
-    or, after a normal install, allow it once:
-
-      xattr -dr com.apple.quarantine "/Applications/RelayKey.app"
-
-    Your identity is stored in the login keychain. `brew uninstall` keeps it;
-    use `brew uninstall --zap` to erase it, which unpairs every machine.
+    Your identity is stored in the login keychain, so `brew uninstall` keeps it
+    and reinstalling does not require re-pairing. `brew uninstall --zap` erases
+    it, which unpairs every machine and cannot be undone from this Mac.
   EOS
 end
