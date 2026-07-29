@@ -4,7 +4,8 @@
 class RelaykeyAgent < Formula
   desc "Remote administration agent for machines behind firewalls, over end-to-end encryption"
   homepage "https://github.com/ptrinh/relaykey-public"
-  version "0.4.0"
+  # No `version` stanza: Homebrew scans it from the v0.4.0 in the URLs below,
+  # and declaring it again is flagged as redundant by `brew audit`.
 
   on_macos do
     on_arm do
