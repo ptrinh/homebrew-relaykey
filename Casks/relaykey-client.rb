@@ -4,8 +4,7 @@ cask "relaykey-client" do
   version "0.4.1"
   sha256 "d52eef86b71cbf56eb82c7785743f87bcdabd5132684cc5c993f3a80916de30a"
 
-  url "https://github.com/ptrinh/relaykey-public/releases/download/v#{version}/relaykey-client-gui-macos-arm64.zip",
-      verified: "github.com/ptrinh/relaykey-public/"
+  url "https://github.com/ptrinh/relaykey-public/releases/download/v#{version}/relaykey-client-gui-macos-arm64.zip"
   name "RelayKey"
   desc "Administer machines behind firewalls over end-to-end encryption, with no backend server"
   homepage "https://github.com/ptrinh/relaykey-public"
