@@ -6,7 +6,7 @@ cask "relaykey-client" do
 
   url "https://github.com/ptrinh/relaykey-public/releases/download/v#{version}/relaykey-client-gui-macos-arm64.zip"
   name "RelayKey"
-  desc "Administer machines behind firewalls over end-to-end encryption, with no backend server"
+  desc "Administer machines behind firewalls over end-to-end encryption"
   homepage "https://github.com/ptrinh/relaykey-public"
 
   depends_on arch: :arm64

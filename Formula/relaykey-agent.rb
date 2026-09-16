@@ -2,7 +2,7 @@
 # Ships as a prebuilt binary because the release artifacts are the tested ones —
 # building from source here would produce a binary we never ran CI against.
 class RelaykeyAgent < Formula
-  desc "Remote administration agent for machines behind firewalls, over end-to-end encryption"
+  desc "Remote administration agent for machines behind firewalls"
   homepage "https://github.com/ptrinh/relaykey-public"
   # Proprietary: the published binaries may be downloaded and run, but the
   # software is not redistributable and the source is not public.
